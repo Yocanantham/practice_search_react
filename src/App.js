@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 import SearchBar from "./components/SearchBar";
 import ImageList from "./components/ImageList";
 import "./api";
@@ -12,7 +13,7 @@ function App() {
         console.log('A search was made for : "', term, '"');
     };
     return (
-        <div>
+        <div className="main-wrapper">
             <SearchBar onSubmit={handleSearch} />
             <ImageList images={images} />
         </div>
