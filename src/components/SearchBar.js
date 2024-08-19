@@ -1,17 +1,24 @@
-// import { useState } from "react";
+import { useState } from "react";
 
-function SearchBar() {
-    // const [term, setTerm] = useState("");
+function SearchBar(props) {
+    const onSubmit = props.onSubmit;
 
-    // const handleChange = () => {
-    //     setTerm(term);
-    // };
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        onSubmit(term);
+    };
+
+    const [term, setTerm] = useState("");
+
+    const handleChange = (event) => {
+        setTerm(event.target.value);
+    };
 
     return (
         <div>
-            <form>
+            <form onSubmit={handleFormSubmit}>
                 <label>Enter your search term</label>
-                <input /* onSubmit={handleChange} */></input>
+                <input onChange={handleChange} value={term}></input>
             </form>
         </div>
     );
