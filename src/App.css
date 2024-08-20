@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 .main-wrapper {
-    min-width: 465px;
+    min-width: 365px;
+    min-height: 100vh;
     background-color: lightblue;
     display: flex;
     flex-flow: column nowrap;
     gap: 3rem;
     align-items: center;
+    justify-content: center;
     padding: 35px;
+    transition: display 0.3s ease;
 }

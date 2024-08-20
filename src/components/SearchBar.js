@@ -3,6 +3,10 @@ import "./SearchBar.css";
 function SearchBar(props) {
     const onSubmit = props.onSubmit;
 
+    const handleClick = () => {
+        onSubmit(term);
+    };
+
     const handleFormSubmit = (event) => {
         event.preventDefault();
         onSubmit(term);
@@ -17,12 +21,16 @@ function SearchBar(props) {
     return (
         <div className="search-bar-main">
             <form className="search-form" onSubmit={handleFormSubmit}>
-                <label className="search-heading">Enter your search term</label>
+                <label className="search-heading">Images Search</label>
                 <input
                     className="search-input"
                     onChange={handleChange}
-                    value={term}></input>
+                    value={term}
+                    placeholder="Enter your search term"></input>
             </form>
+            <button className="search-button" onClick={handleClick}>
+                Search
+            </button>
         </div>
     );
 }

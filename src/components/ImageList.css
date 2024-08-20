@@ -7,3 +7,21 @@
 .images-list {
     column-count: 4;
 }
+
+@media screen and (max-width: 1185px) {
+    .images-list {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .images-list {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .images-list {
+        column-count: 1;
+    }
+}
