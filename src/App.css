@@ -1,6 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .main-wrapper {
+    min-width: 465px;
+    background-color: lightblue;
     display: flex;
     flex-flow: column nowrap;
     gap: 3rem;
     align-items: center;
+    padding: 35px;
 }

@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.search-bar-main {
+    border-radius: 15px;
+    box-shadow: 3px -3px 15px black;
+    background-color: aliceblue;
+    padding: 35px;
+}
+
+.search-form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.search-heading {
+    text-align: center;
+    font-size: large;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.search-input {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: medium;
+    transition: padding 0.3s ease;
+}
+
+.search-input:focus {
+    padding: 15px;
+}
