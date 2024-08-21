@@ -1,3 +1,4 @@
+import ReachTheTop from "./components/reach-the-top.png";
 import { useState } from "react";
 import "./App.css";
 import SearchBar from "./components/SearchBar";
@@ -18,7 +19,7 @@ function App() {
         console.log('A search was made for : "', term, '"');
     };
     return (
-        <div className="main-wrapper">
+        <div className="main-wrapper" id="top">
             <SearchBar
                 onSubmit={handleSearch}
                 searchedterm={handlesearchedterm}
@@ -39,6 +40,16 @@ function App() {
                 </h4>
             )}
             <ImageList images={images} />
+            {searchedterm && (
+                <a href="#top" style={{ display: "block" }}>
+                    <img
+                        className="reach-the-top-image"
+                        src={ReachTheTop}
+                        alt="reach-the-top"
+                        title="reach-the-top"
+                    />
+                </a>
+            )}
         </div>
     );
 }

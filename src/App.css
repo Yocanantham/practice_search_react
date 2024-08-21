@@ -16,3 +16,14 @@
     padding: 35px;
     transition: display 0.3s ease;
 }
+
+.reach-the-top-image {
+    position: fixed;
+    width: 55px;
+    right: 15px;
+    bottom: 15px;
+    display: block;
+    padding: 1px;
+    background-color: rgb(96, 94, 94);
+    border-radius: 15px;
+}
