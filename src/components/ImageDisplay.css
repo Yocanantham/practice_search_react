@@ -37,28 +37,46 @@
 }
 
 .image-caption {
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     gap: 1rem;
     align-items: center;
 }
 .name {
+    font-size: larger;
     font-weight: 900;
 }
 .username {
     display: block;
-    font-size: smaller;
+    font-size: medium;
     font-weight: 500;
     text-decoration: none;
-    transition: font-style 0.3s ease;
+    color: rgba(232, 225, 225, 0.85);
 }
 
 .username:hover {
     cursor: pointer;
-    font-style: italic;
+    color: green;
+    font-weight: 855;
 }
 
 .image-profile {
     display: block;
-    border-radius: 50%;
+    border-radius: 15%;
+}
+
+.image-profile-display {
+    display: none;
+}
+.image-profile-wrapper:hover .image-profile-display {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: -145px;
+    left: -5px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 3;
 }

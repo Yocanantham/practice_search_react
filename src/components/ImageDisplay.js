@@ -12,11 +12,21 @@ function ImageDisplay({ image }) {
                     title={image.alt_description}
                 />
                 <figcaption className="image-caption">
-                    <img
-                        className="image-profile"
-                        src={image.user.profile_image.small}
-                        alt={image.user.name}
-                    />
+                    <div className="image-profile-wrapper">
+                        <img
+                            className="image-profile"
+                            src={image.user.profile_image.small}
+                            alt={image.user.name}
+                        />
+                        <div className="image-profile-display">
+                            <img
+                                style={{ borderRadius: "15px" }}
+                                src={image.user.profile_image.large}
+                                alt={image.user.name}
+                            />
+                        </div>
+                    </div>
+
                     <div>
                         <h4 className="name">{image.user.name}</h4>
                         <a

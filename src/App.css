@@ -5,11 +5,12 @@
 }
 .main-wrapper {
     min-width: 365px;
+    width: 100%;
     min-height: 100vh;
     background-color: lightblue;
     display: flex;
     flex-flow: column nowrap;
-    gap: 3rem;
+    gap: 1.5rem;
     align-items: center;
     justify-content: center;
     padding: 35px;
