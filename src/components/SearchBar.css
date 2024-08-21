@@ -61,7 +61,8 @@
     border: 1px solid transparent;
     font-size: medium;
     background-color: rgba(155, 155, 155, 0.45);
-    transition: font-weight 0.3s ease, padding 1s ease, background-color 1s ease;
+    transition: font-weight 0.3s ease, padding 0.3s ease,
+        background-color 1s ease;
 }
 
 .search-button:hover {
