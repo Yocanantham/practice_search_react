@@ -7,9 +7,13 @@ import "./api";
 import searchImages from "./api";
 
 function App() {
+    const [animate, setAnimate] = useState(false);
+
     const [searchedterm, setsearchedterm] = useState("");
     const handlesearchedterm = (term) => {
-        setsearchedterm(term);
+        setsearchedterm(`Search results for "${term}"`);
+        setAnimate(true);
+        setTimeout(() => setAnimate(false), 1000);
     };
 
     const [images, setImages] = useState([]);
@@ -25,18 +29,8 @@ function App() {
                 searchedterm={handlesearchedterm}
             />
             {searchedterm && (
-                <h4
-                    style={{
-                        backgroundColor: "grey",
-                        minWidth: "100%",
-                        padding: "5px 15px",
-                        borderRadius: "15px",
-                        fontStyle: "italic",
-                        position: "sticky",
-                        top: "5px",
-                        zIndex: "1",
-                    }}>
-                    Search results for "{searchedterm}"
+                <h4 className={`searched ${animate ? "slide-in" : ""}`}>
+                    {searchedterm}
                 </h4>
             )}
             <ImageList images={images} />
