@@ -24,14 +24,14 @@ function SearchBar(props) {
     return (
         <div className="search-bar-main">
             <form className="search-form" onSubmit={handleFormSubmit}>
-                <label className="search-heading">Images Search</label>
+                <label className="search-heading font-customized-A">Images Search</label>
                 <input
-                    className="search-input"
+                    className="search-input font-customized-A"
                     onChange={handleChange}
                     value={term}
                     placeholder="Enter your search term"></input>
             </form>
-            <button className="search-button" onClick={handleClick}>
+            <button className="search-button font-customized-B" onClick={handleClick}>
                 Search
             </button>
         </div>
