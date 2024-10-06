@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/practice_search_react/static/css/main.2fc264bc.css",
-    "main.js": "/practice_search_react/static/js/main.f3959330.js",
+    "main.css": "/practice_search_react/static/css/main.cf33b134.css",
+    "main.js": "/practice_search_react/static/js/main.8109dbb6.js",
+    "static/media/freight-big-pro-book-regular.ttf": "/practice_search_react/static/media/freight-big-pro-book-regular.d8202edffa7453ee51e6.ttf",
     "index.html": "/practice_search_react/index.html",
-    "main.2fc264bc.css.map": "/practice_search_react/static/css/main.2fc264bc.css.map",
-    "main.f3959330.js.map": "/practice_search_react/static/js/main.f3959330.js.map"
+    "main.cf33b134.css.map": "/practice_search_react/static/css/main.cf33b134.css.map",
+    "main.8109dbb6.js.map": "/practice_search_react/static/js/main.8109dbb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fc264bc.css",
-    "static/js/main.f3959330.js"
+    "static/css/main.cf33b134.css",
+    "static/js/main.8109dbb6.js"
   ]
 }
