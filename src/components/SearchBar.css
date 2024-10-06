@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+.font-customized-A {
+    font-family: freight-big-pro, serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.font-customized-B {
+    font-family: freight-big-pro, serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
 .search-bar-main {
     border-radius: 15px;
     box-shadow: 3px -3px 15px black;
