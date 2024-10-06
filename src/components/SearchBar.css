@@ -5,15 +5,15 @@
 }
 
 .font-customized-A {
-    font-family: freight-big-pro, serif;
-    font-style: normal;
-    font-weight: 300;
+    font-family: "freight-big-pro-book-regular";
+    src: local("freight-big-pro-book-regular"),
+        url(../fonts/freight-big-pro-book-regular.ttf) format("truetype");
 }
 
 .font-customized-B {
-    font-family: freight-big-pro, serif;
-    font-style: normal;
-    font-weight: 300;
+    font-family: "freight-big-pro-book-regular";
+    src: local("freight-big-pro-book-regular"),
+        url(../fonts/freight-big-pro-book-regular.ttf) format("truetype");
 }
 
 .search-bar-main {
