@@ -39,8 +39,8 @@
     text-align: center;
     font-size: xx-large;
     font-weight: 900;
-    font-style: italic;
-    text-transform: uppercase;
+    /* font-style: italic;
+    text-transform: uppercase; */
 }
 
 @media screen and (min-width: 1440px) {
